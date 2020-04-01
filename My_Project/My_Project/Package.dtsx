@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/1/2020 5:26:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PUN-FCCXFW2"
+  DTS:CreatorName="BRISTLECONE\Priyanka.Shinde"
+  DTS:DTSID="{B38ACB7D-1D46-405E-AE83-5831FAF1D6D6}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3008.28"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{E1C3F190-921D-448F-A5E9-0C5F4B6365FA}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>
