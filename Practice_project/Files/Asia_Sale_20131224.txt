@@ -1,0 +1,4 @@
+RegionCd,SalePersonName,SaleAmt
+AS,Aamir,100
+AS,Raza,200
+AS,Sukhjeet,300
