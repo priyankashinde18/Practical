@@ -26,11 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">PUN-FCCXFW2</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAACAAAAAAADZgAAwAAAABAAAAC4zU3pJuFs1+iVBVb0eAivAAAAAASAAACgAAAAEAAAAH7XlSb0jE9c8ZSGo/2pQN6IAAAAl4TxEXtWOpD020PvC6hNDNQHBHCoxAereHS9QBw/vIWha8HxFp1SIjGU0iKWbSxhBjsDozojFVtRiAbXvHbwr4Caauj9jJnLGSKyH7RFEySHn0167zwmATUIzROb0q0GkeyiutpoVcmJs5+2s8asKWGdpivWWF7aCYY92hR1Hn8MP9XPU/vsYhQAAADngLLKfACQS/7aD44Mg/reAzmzDA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAACAAAAAAADZgAAwAAAABAAAADqv7t0mkdO9RB5ZNm82kAeAAAAAASAAACgAAAAEAAAAGSE0kPCCeOmlT79boOEvTKIAAAAxcng2sqdbhbNEcSG1EcubikMaRGSFgONlZmtGd3iYaByv93S+Nc9dBkMJ/pGvjGZzcLxzXxOL7IG9KRT6J2VDbSMxV2cDBanzpzZCjrLWm1LOSDSlZc++dhc2tAUMyQ+Y32QJ1EmmkmF3ybxkr5t3jUMhl5yOdgRqp4F+6+Mf7MRu4cC/UNkvhQAAADGvbicWlHvvyn1FrQSu1Q+9Ph+cQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Multiple_files.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Duplicate_records.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -42,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">Multiple_files</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9B4EB0A4-A8A7-45DE-8C07-9E7280A03523}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{89EB2259-A01C-4D18-931A-A3EF8AE505A5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -307,6 +308,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Duplicate_records.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{508EE7CB-68E6-4D92-BC09-8008373595C0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Duplicate_records</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{16AEBD5A-B634-4609-A9CE-0AA02037CEAF}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Multiple_files"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{9B4EB0A4-A8A7-45DE-8C07-9E7280A03523}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{D8B5999F-C5B7-4400-8136-B2216F87D35B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -76,7 +76,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABjT1TTV5j/YRnP7DEf93QDAAAAAASAAACgAAAAEAAAAEGckYwxUMe4sJD9FEIt8GAgAAAANWfzDQuYOwjD4QAMpvZ0rxYNKvxfttGItRYKrLV7uiEUAAAAfJFiI7pDtEiwyoByGFeblnHruaI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuA6QXCpqfVKxg5gVhqGV9AAAAAASAAACgAAAAEAAAAGNkdnzObbtwJZWjDVR7mzkgAAAAsLeLTn0jV4yLGgDRksVZMeT1h9Q4gXi4CoO8N0rsFRQUAAAAkC0yb0f9XKbKak+GQW58ZzPcS2o</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -104,6 +104,23 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{FA687C35-3C8E-420D-B1AD-2A2F7AAF99EC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C42D189A-42CA-4BEA-8547-C656D04580BF}"
+          SQLTask:SqlStatementSource="truncate table RegionalSale" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
@@ -122,7 +139,7 @@
             <FEFEProperty
               Folder="C:\Users\Priyanka.Shinde\Documents\PRAC\Practice_project\Files" />
             <FEFEProperty
-              FileSpec="*.txt" />
+              FileSpec="*Sale*.txt" />
             <FEFEProperty
               FileNameRetrievalType="0" />
             <FEFEProperty
@@ -551,13 +568,23 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{07ADDA1F-7957-4BD7-960B-0F6ED59F37E6}"
-          DTS:ObjectName="{07ADDA1F-7957-4BD7-960B-0F6ED59F37E6}"
+          DTS:DTSID="{2824738A-D3E4-422F-AD8B-63B4D9E383EE}"
+          DTS:ObjectName="{2824738A-D3E4-422F-AD8B-63B4D9E383EE}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Varfilepath" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3EA49EBD-A5B5-414B-90C2-B52700AB84CA}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Foreach Loop Container" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -569,7 +596,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Foreach Loop Container\Data Flow Task"
@@ -580,7 +607,33 @@
           PanelSize="289,148"
           Size="289,191"
           Id="Package\Foreach Loop Container"
-          TopLeft="587,90" />
+          TopLeft="307,129" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="376,36" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="454.5,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
