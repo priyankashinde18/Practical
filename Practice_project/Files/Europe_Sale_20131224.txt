@@ -1,3 +1,0 @@
-RegionCd,SalePersonName,SaleAmt
-EU,Mike,1000
-EU,Robert,1500

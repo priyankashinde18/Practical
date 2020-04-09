@@ -1,3 +1,0 @@
-RegionCd,SalePersonName,SaleAmt
-Z,Sona,700
-Z,Rose,200

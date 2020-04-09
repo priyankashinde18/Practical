@@ -1,0 +1,4 @@
+RegionCd,SalePersonName,SaleAmt,UniqueID
+AS,Aamir,100,A123
+AS,Raza,200,R234
+AS,Sukhjeet,300,S345

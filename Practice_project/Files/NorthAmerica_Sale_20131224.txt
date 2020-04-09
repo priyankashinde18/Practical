@@ -1,3 +1,0 @@
-RegionCd,SalePersonName,SaleAmt
-NA,Jimmy,700
-NA,Lisa,200

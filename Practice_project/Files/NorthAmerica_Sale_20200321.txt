@@ -1,0 +1,4 @@
+RegionCd,SalePersonName,SaleAmt,UniqueID
+NA,Jimmy,700,J678
+NA,Lisa,200,L890
+NA,Rose,100,R647

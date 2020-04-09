@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Multiple_files"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{D8B5999F-C5B7-4400-8136-B2216F87D35B}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{DD2A1144-F242-48E1-B829-03B2B61D84B7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -76,7 +76,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuA6QXCpqfVKxg5gVhqGV9AAAAAASAAACgAAAAEAAAAGNkdnzObbtwJZWjDVR7mzkgAAAAsLeLTn0jV4yLGgDRksVZMeT1h9Q4gXi4CoO8N0rsFRQUAAAAkC0yb0f9XKbKak+GQW58ZzPcS2o</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACN1CcK0gcUu3rPQXe/daOgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABxhfUB95jg8ZdHeX84x1sCAAAAAASAAACgAAAAEAAAAFHfPhLgg25vAhIUMcOlxbggAAAARp8gE7RbqNk/7VHOdYVCThm0USCFEoOThBPlDLgMqigUAAAAU8AQuQiJ0NLdaeb2mJMmSybI4Tk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -568,8 +568,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{2824738A-D3E4-422F-AD8B-63B4D9E383EE}"
-          DTS:ObjectName="{2824738A-D3E4-422F-AD8B-63B4D9E383EE}"
+          DTS:DTSID="{6F29143D-F2B6-4D7F-8C5C-0E76BD49482C}"
+          DTS:ObjectName="{6F29143D-F2B6-4D7F-8C5C-0E76BD49482C}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::Varfilepath" />
       </DTS:ForEachVariableMappings>
